@@ -3,14 +3,42 @@
   "metadata": {},
   "schema": {
     "name": "bb-plugin-TreeView",
-    "friendlyName": "bb-plugin-TreeView",
+    "friendlyName": "TreeView",
     "description": "A TreeView Component for Budibase",
-    "icon": "Text",
-    "settings": [
+    "icon": "treeview",
+    "settings": [ 
       {
-        "type": "text",
-        "key": "text",
-        "label": "Text"
+        "type": "dataProvider",
+        "label": "Provider",
+        "key": "dataProvider",
+        "required": true
+      },
+      {
+        "type": "icon",
+        "key": "icon",
+        "label": "Icon"
+      },
+      {
+        "type": "select",
+        "key": "size",
+        "label": "Size",
+        "options": [
+          {"label": "Small", "value": "S"},
+          {"label": "Medium", "value": "M"},
+          {"label": "Large", "value": "L"},
+          {"label": "Extra Large", "value": "XL"}
+        ],
+        "defaultValue": "M"
+      },
+      {
+        "type": "field",
+        "label": "Title Column",
+        "key": "showColumn"
+      },
+      {
+        "type": "field/link",
+        "label": "Child Column",
+        "key": "childColumn"
       }
     ]
   }

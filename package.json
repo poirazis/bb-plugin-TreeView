@@ -2,6 +2,7 @@
   "name": "bb-plugin-TreeView",
   "version": "1.0.0",
   "description": "A TreeView Component for Budibase",
+  "author": "Michael Poirazi",
   "license": "MIT",
   "svelte": "index.js",
   "module": "dist/plugin.min.js",
@@ -11,6 +12,7 @@
   },
   "dependencies": {
     "@crownframework/svelte-error-boundary": "^1.0.3",
+    "@spectrum-css/treeview": "^6.0.21",
     "svelte": "^3.49.0"
   },
   "devDependencies": {

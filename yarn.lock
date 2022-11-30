@@ -31,11 +31,11 @@
     regenerator-runtime "^0.13.11"
 
 "@budibase/backend-core@^2.0.13":
-  version "2.1.40"
-  resolved "https://registry.yarnpkg.com/@budibase/backend-core/-/backend-core-2.1.40.tgz#3f716c301f51ae3694bc7c883cd75197f848f369"
-  integrity sha512-/yKbbMp+0ZnRJeWJ8GVerNTTqV1HkkXx5gZh/+yxgZMh8hGkphpJaxUyD1RUQWM4MPYllTE+WttVuVigr91rYg==
+  version "2.1.41"
+  resolved "https://registry.yarnpkg.com/@budibase/backend-core/-/backend-core-2.1.41.tgz#069f50d01d7e8f860a96d99282cdaaad562101a1"
+  integrity sha512-p6plW5SZ5vsf1YfwJGrQBlzHwIywqqw6xzdYU/8GmPJMRqvq62BaSSSJdsFGAPw/jjpYXoO/Hgx0CPivbG+jRg==
   dependencies:
-    "@budibase/types" "^2.1.40"
+    "@budibase/types" "^2.1.41"
     "@shopify/jest-koa-mocks" "5.0.1"
     "@techpass/passport-openidconnect" "0.3.2"
     aws-sdk "2.1030.0"
@@ -67,10 +67,10 @@
     uuid "8.3.2"
     zlib "1.0.5"
 
-"@budibase/types@^2.1.40":
-  version "2.1.40"
-  resolved "https://registry.yarnpkg.com/@budibase/types/-/types-2.1.40.tgz#11fc8dbb4401aa90956156707e97ac75e3ac90db"
-  integrity sha512-vFmTD7lcMD4mQOmBYY0elN9Gtq18ywg8vicMX4g8p/4nrph9uA94uzHhSTeIahVDqMG9LUKb06BUhEBIvfT0gw==
+"@budibase/types@^2.1.41":
+  version "2.1.41"
+  resolved "https://registry.yarnpkg.com/@budibase/types/-/types-2.1.41.tgz#72c2367a9fa97cdf7adea1ca2c3e62d6bb9fdf29"
+  integrity sha512-Wgm81aYyCZAtOywRtIbQhGkisNrJkEYbr9YgOYKjrcLEMc6X2zzsxWZBdTjcuhINkWzgpJ+RvUl3OlD811L18g==
 
 "@crownframework/svelte-error-boundary@^1.0.3":
   version "1.0.3"
@@ -241,6 +241,11 @@
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@sideway/pinpoint/-/pinpoint-2.0.0.tgz#cff8ffadc372ad29fd3f78277aeb29e632cc70df"
   integrity sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ==
+
+"@spectrum-css/treeview@^6.0.21":
+  version "6.0.21"
+  resolved "https://registry.yarnpkg.com/@spectrum-css/treeview/-/treeview-6.0.21.tgz#cdd554825bb875aaaec068b98ec5e76728fb3091"
+  integrity sha512-fGgM0M/vPbuDE3EVFve8k7hOT1AdwQ9gFXfvJIPSEQZeOqQW7Anmd+TCvz4i4tdhvWl4nMSccGPbrz/7nKseOg==
 
 "@techpass/passport-openidconnect@0.3.2":
   version "0.3.2"
@@ -596,9 +601,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001400:
-  version "1.0.30001434"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001434.tgz#ec1ec1cfb0a93a34a0600d37903853030520a4e5"
-  integrity sha512-aOBHrLmTQw//WFa2rcF1If9fa3ypkC1wzqqiKHgfdrXTWcU8C4gKVZT77eQAPWN1APys3+uQ0Df07rKauXGEYA==
+  version "1.0.30001435"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001435.tgz#502c93dbd2f493bee73a408fe98e98fb1dad10b2"
+  integrity sha512-kdCkUTjR+v4YAJelyiDTqiu82BDr4W4CP5sgTA0ZBmqn30XfS2ZghPLMowik9TPhS+psWJiUNxsqLyurDbmutA==
 
 caseless@~0.12.0:
   version "0.12.0"

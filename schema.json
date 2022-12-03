@@ -6,17 +6,13 @@
     "friendlyName": "TreeView",
     "description": "A TreeView Component for Budibase",
     "icon": "treeview",
+    "hasChildren": false,
     "settings": [ 
       {
         "type": "dataProvider",
         "label": "Provider",
         "key": "dataProvider",
         "required": true
-      },
-      {
-        "type": "icon",
-        "key": "icon",
-        "label": "Icon"
       },
       {
         "type": "select",
@@ -32,13 +28,50 @@
       },
       {
         "type": "field",
-        "label": "Title Column",
-        "key": "showColumn"
+        "label": "Parent ID",
+        "key": "parentID"
       },
       {
-        "type": "field/link",
+        "type": "field",
+        "label": "Parent Value",
+        "key": "parentValue"
+      },
+      {
+        "type": "icon",
+        "key": "parentIcon",
+        "label": "Parent Icon"
+      },
+      {
+        "type": "event",
+        "label": "On Parent Click",
+        "key": "parentOnClick",
+        "context": [
+          {
+            "label": "SelectedID",
+            "key": "selectedId"
+          }
+        ]
+      },
+      {
+        "type": "field",
         "label": "Child Column",
         "key": "childColumn"
+      },
+      {
+        "type": "icon",
+        "key": "childIcon",
+        "label": "Child Icon"
+      },
+      {
+        "type": "event",
+        "label": "On Child Click",
+        "key": "childOnClick",
+        "context": [
+          {
+            "label": "SelectedID",
+            "key": "selectedId"
+          }
+        ]
       }
     ]
   }

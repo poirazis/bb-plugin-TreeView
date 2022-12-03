@@ -31,11 +31,11 @@
     regenerator-runtime "^0.13.11"
 
 "@budibase/backend-core@^2.0.13":
-  version "2.1.41"
-  resolved "https://registry.yarnpkg.com/@budibase/backend-core/-/backend-core-2.1.41.tgz#069f50d01d7e8f860a96d99282cdaaad562101a1"
-  integrity sha512-p6plW5SZ5vsf1YfwJGrQBlzHwIywqqw6xzdYU/8GmPJMRqvq62BaSSSJdsFGAPw/jjpYXoO/Hgx0CPivbG+jRg==
+  version "2.1.42"
+  resolved "https://registry.yarnpkg.com/@budibase/backend-core/-/backend-core-2.1.42.tgz#bc9602a2db12d7c7b24674847be61b3ba27b4c21"
+  integrity sha512-cfSxsBXj+NwywxJoK533dMe4wzDyQv5Ml+tid0cYrwaYaDIXqyGrXF8avzEuy3tKFlwoLyMW8SH4rr23OIuZTg==
   dependencies:
-    "@budibase/types" "^2.1.41"
+    "@budibase/types" "^2.1.42"
     "@shopify/jest-koa-mocks" "5.0.1"
     "@techpass/passport-openidconnect" "0.3.2"
     aws-sdk "2.1030.0"
@@ -67,10 +67,10 @@
     uuid "8.3.2"
     zlib "1.0.5"
 
-"@budibase/types@^2.1.41":
-  version "2.1.41"
-  resolved "https://registry.yarnpkg.com/@budibase/types/-/types-2.1.41.tgz#72c2367a9fa97cdf7adea1ca2c3e62d6bb9fdf29"
-  integrity sha512-Wgm81aYyCZAtOywRtIbQhGkisNrJkEYbr9YgOYKjrcLEMc6X2zzsxWZBdTjcuhINkWzgpJ+RvUl3OlD811L18g==
+"@budibase/types@^2.1.42":
+  version "2.1.42"
+  resolved "https://registry.yarnpkg.com/@budibase/types/-/types-2.1.42.tgz#57693b0a4c625abc581453dbcd1a68a8aac5a00f"
+  integrity sha512-P5dG4cUYmRI7chlY4dRBZxp1n0CkRyqrSmfvYoHUxqrSSzNiL0qYmhySkG10wXZ9RSw5a17v5lXlFc1g8WZ9Ig==
 
 "@crownframework/svelte-error-boundary@^1.0.3":
   version "1.0.3"
@@ -242,11 +242,6 @@
   resolved "https://registry.yarnpkg.com/@sideway/pinpoint/-/pinpoint-2.0.0.tgz#cff8ffadc372ad29fd3f78277aeb29e632cc70df"
   integrity sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ==
 
-"@spectrum-css/treeview@^6.0.21":
-  version "6.0.21"
-  resolved "https://registry.yarnpkg.com/@spectrum-css/treeview/-/treeview-6.0.21.tgz#cdd554825bb875aaaec068b98ec5e76728fb3091"
-  integrity sha512-fGgM0M/vPbuDE3EVFve8k7hOT1AdwQ9gFXfvJIPSEQZeOqQW7Anmd+TCvz4i4tdhvWl4nMSccGPbrz/7nKseOg==
-
 "@techpass/passport-openidconnect@0.3.2":
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/@techpass/passport-openidconnect/-/passport-openidconnect-0.3.2.tgz#f8fd5d97256286665dbf26dac92431f977ab1e63"
@@ -274,9 +269,9 @@
   integrity sha512-EYNwp3bU+98cpU4lAWYYL7Zz+2gryWH1qbdDTidVd6hkiR6weksdbMadyXKXNPEkQFhXM+hVO9ZygomHXp+AIw==
 
 "@types/node@*":
-  version "18.11.9"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.9.tgz#02d013de7058cea16d36168ef2fc653464cfbad4"
-  integrity sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==
+  version "18.11.10"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.11.10.tgz#4c64759f3c2343b7e6c4b9caf761c7a3a05cee34"
+  integrity sha512-juG3RWMBOqcOuXC643OAdSA525V44cVgGV6dUDuiFtss+8Fk5x1hI93Rsld43VeJVIeqlP9I7Fn9/qaVqoEAuQ==
 
 "@types/resolve@1.17.1":
   version "1.17.1"
@@ -601,9 +596,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001400:
-  version "1.0.30001435"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001435.tgz#502c93dbd2f493bee73a408fe98e98fb1dad10b2"
-  integrity sha512-kdCkUTjR+v4YAJelyiDTqiu82BDr4W4CP5sgTA0ZBmqn30XfS2ZghPLMowik9TPhS+psWJiUNxsqLyurDbmutA==
+  version "1.0.30001436"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001436.tgz#22d7cbdbbbb60cdc4ca1030ccd6dea9f5de4848b"
+  integrity sha512-ZmWkKsnC2ifEPoWUvSAIGyOYwT+keAaaWPHiQ9DfMqS1t6tfuyFYoWR78TeZtznkEQ64+vGXH9cZrElwR2Mrxg==
 
 caseless@~0.12.0:
   version "0.12.0"
@@ -3724,9 +3719,9 @@ tar@^6.1.11:
     yallist "^4.0.0"
 
 terser@^5.0.0:
-  version "5.16.0"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-5.16.0.tgz#29362c6f5506e71545c73b069ccd199bb28f7f54"
-  integrity sha512-KjTV81QKStSfwbNiwlBXfcgMcOloyuRdb62/iLFPGBcVNF4EXjhdYBhYHmbJpiBrVxZhDvltE11j+LBQUxEEJg==
+  version "5.16.1"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-5.16.1.tgz#5af3bc3d0f24241c7fb2024199d5c461a1075880"
+  integrity sha512-xvQfyfA1ayT0qdK47zskQgRZeWLoOQ8JQ6mIgRGVNwZKdQMU+5FkCBjmv4QjcrTzyZquRw2FVtlJSRUmMKQslw==
   dependencies:
     "@jridgewell/source-map" "^0.3.2"
     acorn "^8.5.0"

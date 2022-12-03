@@ -1,21 +1,42 @@
 <script>
+    import { createEventDispatcher } from "svelte"
+    const dispatch = createEventDispatcher();
+
     export let selected = false
     export let open = false
     export let href = false
+    export let onClick
     export let title
     export let icon 
-    export let size 
+    export let size
+    export let id = ""
 
-    let iconSize
-    $: iconSize = size === "S" ? "ri-sm" : ( size === "M") ? "ri-1x" : ( size === "L" ) ? "ri-lg" : "ri-2x" 
+    let iconSize = "ri-1x"
+    $: id = sanitize(id)
+
+    // Clear the erroneous wrapping of id fields on relationships from DataProvider
+    function sanitize (input)
+    {
+      if (String(input).startsWith("%5B")) {
+        input = String(input).slice(3,-3);
+      }
+      return input
+    }
+
+    function handleClick (event) {
+      open = !open;
+      onClick({ selectedId : id })
+    }
   </script>
   
-  <li
+  <!-- svelte-ignore a11y-click-events-have-key-events -->
+  <li  
     class:is-selected={selected}
     class:is-open={open}
     class="spectrum-TreeView-item"
   >
-    <a on:click={() => open = !open} class="spectrum-TreeView-itemLink" {href}>
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <span on:click={handleClick} class="spectrum-TreeView-itemLink" {href}>
       {#if $$slots.default}
         <svg
           class="spectrum-Icon spectrum-UIIcon-ChevronRight100 spectrum-TreeView-itemIndicator"
@@ -27,12 +48,10 @@
       {/if}
       {#if icon}
         <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <i
-          class="{icon} {iconSize}"
-        />
+        <i class="{icon} {iconSize}" />
       {/if}
       <span class="spectrum-TreeView-itemLabel">{title}</span>
-    </a>
+      </span>
     {#if $$slots.default}
       <ul class="spectrum-TreeView spectrum-Treeview--size{size}">
         <slot />

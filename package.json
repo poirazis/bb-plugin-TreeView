@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@crownframework/svelte-error-boundary": "^1.0.3",
-    "@spectrum-css/treeview": "^6.0.21",
     "svelte": "^3.49.0"
   },
   "devDependencies": {

@@ -1,7 +1,7 @@
 {
-  "name": "bb-plugin-TreeView",
+  "name": "bb-component-SuperTreeView",
   "version": "1.0.0",
-  "description": "A TreeView Component for Budibase",
+  "description": "A TreeView Component for Budibase with Super Powers !",
   "author": "Michael Poirazi",
   "license": "MIT",
   "svelte": "index.js",

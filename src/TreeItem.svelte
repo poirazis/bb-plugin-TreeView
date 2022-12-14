@@ -1,7 +1,5 @@
 <script>
-    import { createEventDispatcher } from "svelte"
-    const dispatch = createEventDispatcher();
-
+    export let selectable
     export let selected = false
     export let open = false
     export let href = false
@@ -11,7 +9,7 @@
     export let size
     export let id = ""
 
-    let iconSize = "ri-1x"
+    let iconSize = "ri-sm"
     $: id = sanitize(id)
 
     // Clear the erroneous wrapping of id fields on relationships from DataProvider
@@ -24,19 +22,25 @@
     }
 
     function handleClick (event) {
-      open = !open;
-      onClick({ selectedId : id })
+      if ($$slots.default)
+        open = !open
+      else 
+        selected = selectable ? !selected : false; 
+
+      if (onClick) onClick({ nodeType : " Items"});    
     }
   </script>
   
   <!-- svelte-ignore a11y-click-events-have-key-events -->
+
   <li  
     class:is-selected={selected}
     class:is-open={open}
     class="spectrum-TreeView-item"
   >
     <!-- svelte-ignore a11y-click-events-have-key-events -->
-    <span on:click={handleClick} class="spectrum-TreeView-itemLink" {href}>
+    <span on:click={handleClick}  class="spectrum-TreeView-itemLink" {href}> 
+
       {#if $$slots.default}
         <svg
           class="spectrum-Icon spectrum-UIIcon-ChevronRight100 spectrum-TreeView-itemIndicator"
@@ -46,21 +50,30 @@
           <use xlink:href="#spectrum-css-icon-Chevron100" />
         </svg>
       {/if}
-      {#if icon}
+      
+      <span class="spectrum-TreeView-itemLabel">       
+        {#if icon}
         <!-- svelte-ignore a11y-click-events-have-key-events -->
-        <i class="{icon} {iconSize}" />
-      {/if}
-      <span class="spectrum-TreeView-itemLabel">{title}</span>
+          <i class="{icon} {iconSize}" />
+        {/if} 
+       {title} 
       </span>
+    </span>
+
     {#if $$slots.default}
       <ul class="spectrum-TreeView spectrum-Treeview--size{size}">
         <slot />
       </ul>
     {/if}
+
   </li>
 
   <style>
     i {
-      margin-right: 0.25em;
+      margin-right: 0.25rem;
+    }
+    .spectrum-TreeView-itemLabel {
+      display: flex;
+      align-items: center;
     }
   </style>
